@@ -1,36 +1,96 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-
+/* CSS Background Image Size Tutorial – How to Code a Full Page Background Image =>https: //bit.ly/3Id3w4L */
+html {
+    min-height: 100%;
+    background-image: url('./yellow-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
 }
 
-#nav-title {
+a:hover {
+    color: purple;
+}
+
+header h1 {
     margin-right: auto;
-    font-size: 1.5em;
 }
 
-header li {
+header nav ul {
+    display: flex;
     list-style-type: none;
-    display: inline-block;
-    padding: 0 20px;
 }
 
-header a {
+header nav ul li {
+    padding-right: 10px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 550;
 }
 
-header a:hover {
-    color: #b2dfdb;
+header h1 span {
+    color: purple;
+}
+
+header nav ul li a span {
+    background-color: purple;
+    padding: 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+header nav ul li a span:hover {
+    background-color: white;
+    color: purple;
+}
+
+section {
+    margin-top: 200px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 3em;
+    color: purple;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section p span {
+    color: purple;
+    font-weight: bold;
+}
+
+section button {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+section button:hover {
+    color: purple;
+    background-color: white;
 }
